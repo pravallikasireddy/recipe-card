@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 27%, 94%);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    background: #ffffff;
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+ul li, ol li {
+    margin: 6px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+ul li:hover, ol li:hover {
+    color: #d35400;
+    
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #e67e22;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff8306;
+}
+
+.hidden {
+    display: none;
+}
+
+.progress {
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #27ae60;
+    transition: width 0.5s;
+}
+
+.timer {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media print {
+    button {
+        display: none;
+    }
+}

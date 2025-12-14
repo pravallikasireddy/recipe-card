@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Recipe Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Chocolate Cake</h2>
+
+   <img src="https://api.floraindia.com/upload/NIWHjj52241754041542318.webp" alt="Chocolate Cake">
+
+    <p><strong>Preparation Time:</strong> 45 minutes</p>
+    <p><strong>Serving Size:</strong> 4 people</p>
+
+    <button id="ingredientBtn" onclick="toggleIngredients()">
+    Show Ingredients
+</button>
+
+    <!-- Ingredients Section -->
+    <div id="ingredients" class="hidden">
+        <h4>Dry Ingredients</h4>
+        <ul>
+            <li>Flour</li>
+            <li>Sugar</li>
+            <li>Cocoa Powder</li>
+            <li>Baking Soda</li>
+            <li>Baking Powder</li>
+            <li>Pinch of Salt</li>
+        </ul>
+
+        <h4>Wet Ingredients</h4>
+        <ul>
+            <li>Oil</li>
+            <li>Milk</li>
+            <li>Vanilla Essence</li>
+            <li>Vinegar / Lemon Juice</li>
+        </ul>
+    </div>
+
+    <h3>Instructions</h3>
+    <ol id="steps">
+        <li>Mix and sieve all dry ingredients in one bowl.</li>
+        <li>Mix sugar, oil, milk, vanilla, and lemon juice in another bowl.</li>
+        <li>Combine wet and dry mixes gently to make smooth batter.</li>
+        <li>Bake at 180°C for 30–35 min or cook in preheated cooker on low flame for 40–45 min.</li>
+    </ol>
+
+    <button onclick="startCooking()">Start Cooking</button>
+    <button onclick="nextStep()">Next Step</button>
+    <button onclick="window.print()">Print Recipe</button>
+
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="timer" id="timer">Time Left: 45:00</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
